@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="example-pkg-andrazpolak",
-    version="0.0.1",
+    version="0.0.5",
     description="A small example package678",
     url="https://github.com/andrazpolak/pythonPackage_Pip",
     author="Andraz Polak",
