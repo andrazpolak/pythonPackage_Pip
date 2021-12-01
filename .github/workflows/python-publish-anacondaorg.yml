@@ -21,21 +21,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.- name: Publish Anaconda package to Anaconda.org
       - name: build and publish Anaconda package to Anaconda.org
         uses: BEFH/anaconda-publish@v1.5.1
         with:
           # Sub-directory with conda recipe
           subDir: conda-recipe
+          channels: "andrazpolak"
           # Anaconda access Token
           AnacondaToken: ${{ secrets.ANACONDAORG_API_TOKEN }}
           # Whether to publish to anaconda

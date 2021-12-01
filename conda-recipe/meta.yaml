@@ -26,6 +26,6 @@ test:
     - pytest
 
 about:
-  home: https://github.com/KnaufAI/kdl.git
+  home: {{ data.get('url') }}
   license: {{ data.get('license') }}
-  summary: {{ data.get('description') }}
+  summary: {{ data.get('description') }}url
