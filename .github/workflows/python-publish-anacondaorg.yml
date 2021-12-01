@@ -35,7 +35,7 @@ jobs:
         uses: BEFH/anaconda-publish@v1.5.1
         with:
           # Sub-directory with conda recipe
-          subDir: .conda-recipe
+          subDir: conda-recipe
           # Anaconda access Token
           AnacondaToken: ${{ secrets.ANACONDAORG_API_TOKEN }}
           # Whether to publish to anaconda
